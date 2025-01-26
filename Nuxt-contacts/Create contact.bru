@@ -1,0 +1,21 @@
+meta {
+  name: Create contact
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3010/api/contacts
+  body: json
+  auth: none
+}
+
+body:json {
+   {
+      "email": "Porfiri_Vontsov57@gmail.com",
+      "name": "Виктория Захаровна Егорова",
+      "avatarUrl": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "phone": "+7 (998) 884-24-79",
+      "birthday": "1966-02-19T00:53:26.456Z"
+    }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Update contact
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3010/api/contacts/3
+  body: json
+  auth: none
+}
+
+body:json {
+  {"name":"Юрий Григорьевич Гончаров"}
+}
