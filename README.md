@@ -2,7 +2,6 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -30,6 +29,26 @@
 npm install
 ```
 
+## Add in project .env file which
+
+```
+DATABASE_URL="file:./dev.db"
+
+PORT="3010"
+```
+
+## Project initial and pull mock database or
+
+```bash
+npx prisma migrage dev
+```
+
+## Project initial no pull mock database
+
+```bash
+npx prisma migrage prod
+```
+
 ## Compile and run the project
 
 ```bash
@@ -47,18 +66,12 @@ $ npm run start:prod
 ## View API
 
 <p align="center">
-  <a href="http://localhost:3010/api/" target="blank">Открыть API проекта</a>
+  <a href="http://localhost:3010/api/" target="blank">Открыть API локального проекта</a>
 </p>
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+<p align="center">
+  <a href="https://mab-dev.ru/api/" target="blank">Открыть API web проекта</a>
+</p>
 
 ## License
 
